@@ -87,6 +87,9 @@ header figure img{
     width: 469px;
 }
 /*ABOUT*/
+#about .invisible{
+    display: none;
+}
 #about .content{
     padding-left: 50px;
     float: left;
