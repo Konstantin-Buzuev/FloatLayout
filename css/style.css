@@ -1,0 +1,505 @@
+/*COMMON*/
+*{
+    font-family: 'Arial MT Std Light', sans-serif, monospace;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    height: 47px;
+    vertical-align: top;
+}
+h2{
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+}
+p{
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: -0.37px;
+}
+/* Old browser support*/
+section, article, aside, footer, header, nav {
+  display:block;
+}
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: auto;
+}
+section:nth-child(odd){
+    background-color: #ffffff;
+}
+section:nth-child(even){
+    background-color: #f5f5f5;
+}
+section h2{
+    padding-bottom: 30px;
+    /*padding bottom redifined in some sections*/
+    text-align: center;
+    /*text-align redifined in "About" section*/
+}
+/*HEADER*/
+header{
+    background-color: #445162;
+    color: #ffffff;
+    padding-top: 50px;
+}
+header .content{
+    padding-left: 50px;
+    float: left;
+}
+header h1{
+    padding-bottom: 50px;
+}
+.content ul li{
+    list-style: none; 
+    background: url(../img/check_icon.png) no-repeat; 
+    padding-left: 36px;
+    padding-bottom: 6.25px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.015px;
+}
+header figure{
+    padding-right: 50px;
+    padding-bottom: 60px;
+    text-align: end;
+    height: 214px;
+}
+header figure img{
+    height: 214px;
+    width: 469px;
+}
+/*ABOUT*/
+#about .invisible{
+    display: none;
+}
+#about .content{
+    padding-left: 50px;
+    float: left;
+}
+#about h2{
+    text-align: left;
+}
+#about p{
+    width: 653px;
+}
+#about .video{
+    padding-right: 50px;
+    text-align: end;
+    height: 245px;
+}
+#about .video img{
+    height: 245px;
+    width: 430px;
+}
+/*DIGNITY*/
+#dignities{
+    padding-bottom: 15px;
+}
+.dignity{
+    float: left;
+    width: 567px;
+    padding-bottom: 35px;
+}
+.dignity:nth-child(odd){
+    padding-right: 73px;
+}
+.dignity:nth-child(even){
+    padding-left: 50px;
+    padding-right: 23px;
+}
+ .dignity img{
+    float: left;
+    padding-right: 9px;
+}
+.dignity img:hover{
+    cursor: pointer;
+}
+.dignity p{
+    overflow: hidden;
+}
+/*SCREENSHOTS*/
+#screenshots{
+    padding-bottom: 20px;
+}
+#screenshots h2{
+    padding-bottom: 35px;
+}
+.screenshot{
+    width: 574px;
+    float: left;
+    padding-bottom: 30px;
+}
+.screenshot:nth-child(odd){
+    padding-right: 66px;
+}
+.screenshot:nth-child(even){
+    padding-left: 50px;
+    padding-right: 15px;
+}
+.screenshot img{
+    float: left;
+    padding-right: 15px;
+    width: 200px;
+    height: 150px;
+}
+.screenshot figcaption{
+    color: #445161;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+/*REVIEWS*/
+#reviews{
+    padding-bottom: 26px;
+}
+#reviews h2{
+    padding-bottom: 35px;
+}
+.review{
+    width: 574px;
+    float: left;
+    padding-bottom: 24px;
+}
+.review:nth-child(even){
+    padding-left: 50px;
+    padding-right: 32px;
+}
+.review:nth-child(odd){
+    padding-right: 50px;
+}
+.review .userpic{
+    float: left;
+}
+.review .comment{
+    padding-left: 16px;
+    overflow: hidden;
+    background-image: url(../img/bg_comment.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.review .comment .text{
+    font-style: italic;
+    color: #333333;
+    height: 64px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    padding: 16px 20px 15px 13px;
+}
+.review .author{
+    font-style: normal;
+    color: #989898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    padding-left: 13px;
+}
+/*BUY*/
+#buy{
+    padding-left: 145px;
+    padding-right: 145px;
+}
+.buy-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.buypack{
+    width: 300px;
+    background-color: #445162;
+    float: left;
+    text-align: center;
+    border-radius: 3px;
+}
+.buypack h3{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.buypack .price{
+    background-color: #ffffff;
+    color: #445162;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: 2px solid #445162;
+}
+.buypack ol{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+    list-style-type: decimal;
+    padding-left: 32px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+.buy-button-container{
+    text-align: center;
+    padding-bottom: 20px;
+}
+#buy .button{
+    display: inline-block;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-top: 14px;
+    width: 260px;
+    height: 26px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+}
+.button:hover{
+    box-shadow: none;
+}
+.button span{
+    color: #445161;
+}
+/*FOOTER*/
+footer{
+    background-color: #445162;
+    padding-left: 250px;
+    padding-right: 245px;
+    padding-top: 52px;
+    padding-bottom: 50px;
+    overflow: auto;
+}
+footer h2{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;    
+    text-align: center;
+    padding-bottom: 31px;
+}
+footer form{
+    float: left;
+    border: none;
+}
+footer fieldset{
+    border: none;
+    padding-right: 45px;
+}
+footer form input{
+    display: block;
+    width: 490px;
+    height: 40px;
+    border-radius: 3px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    margin-bottom: 21px;
+    padding-left: 10px;
+}
+.userName{
+    text-transform: capitalize;
+}
+.userName:valid{
+    outline: 3px solid mediumseagreen;
+}
+footer input[type="email"]:valid {
+    outline: 3px solid mediumseagreen;
+}
+footer textarea{
+    display: block;
+    resize: none;
+    width: 490px;
+    height: 170px;
+    border-radius: 3px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    margin-bottom: 21px;
+    padding-left: 10px;
+    padding-top: 13px;
+}
+footer input[type=submit]{
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+footer input[type=submit]:hover{
+    cursor: pointer;
+}
+footer .contact{
+    float: left;
+    font-style: normal;
+    width: 240px;
+}
+footer .contact ul{
+    padding: 0;
+}
+footer .contact ul li{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    list-style: none;
+    line-height: 24px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+footer #skype{
+    background: url(../img/skype_icon.png) no-repeat left center;
+}
+footer #icq{
+    background: url(../img/icq_icon.png) no-repeat left center;
+}
+footer #email{
+    background: url(../img/email_icon.png) no-repeat left center;
+}
+footer #phone{
+    background: url(../img/phone_icon.png) no-repeat left center;
+}
+footer .social-networks{
+    margin-top: 35px;
+    height: 36px;
+}
+footer .social-networks a{
+    font-family: Socialico;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    vertical-align: middle;
+    
+}
+.copyright{
+    text-align: center;
+    clear: both;
+    color: #445162;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+/*Socialico*/
+@font-face {
+     font-family: "Socialico";
+     src: url("../fonts/Socialico/Socialico.eot?") format("eot"), url("../fonts/Socialico/Socialico.woff") format("woff"), url("../fonts/Socialico/Socialico.ttf") format("truetype"), url("../fonts/Socialico/Socialico.svg#Socialico") format("svg");
+     font-weight: normal;
+     font-style: normal;
+}
+/*Arial MT*/
+@font-face {
+font-family: 'Arial MT Std Italic';
+font-style: normal;
+font-weight: normal;
+src:  url("../fonts/ArialMT/arial-mt-std-italic-586c358cbc0a5.woff") format('woff');
+}
+@font-face {
+font-family: 'Arial MT Std Light';
+font-style: normal;
+font-weight: normal;
+src: url("../fonts/ArialMT/arial-mt-std-light-586c341645fe0.woff") format('woff');
+}
+@font-face {
+font-family: 'Arial MT Std Light Cond';
+font-style: normal;
+font-weight: normal;
+src: url("../fonts/ArialMT/arial-mt-std-light-cond-586c34fca466a.woff") format('woff');
+}
+@font-face {
+font-family: 'Arial MT Std Light Italic';
+font-style: normal;
+font-weight: normal;
+src: url("../fonts/ArialMT/arial-mt-std-light-italic-586c34c0cf3af.woff") format('woff');
+}
+@font-face {
+font-family: 'Arial MT Std Cond';
+font-style: normal;
+font-weight: normal;
+src:  url("../fonts/ArialMT/arial-mt-std-cond-586c3568cef79.woff") format('woff');
+}
+@font-face {
+font-family: 'Arial MT Std Bold Cond';
+font-style: normal;
+font-weight: normal;
+src: url("../fonts/ArialMT/arial-mt-std-bold-cond-586c34dd7068c.woff") format('woff');
+}
+@font-face {
+font-family: 'Arial MT Std Extra Bold Cond';
+font-style: normal;
+font-weight: normal;
+src: url("../fonts/ArialMT/arial-mt-std-extra-bold-cond-586c351f4de8a.woff") format('woff');
+}
+@font-face {
+font-family: 'Arial MT Std Black';
+font-style: normal;
+font-weight: normal;
+src: url("../fonts/ArialMT/arial-mt-std-black-586c347abdbc8.woff") format('woff');
+}
+@font-face {
+font-family: 'Arial Narrow MT Std';
+font-style: normal;
+font-weight: normal;
+src: url("../fonts/ArialMT/arial-narrow-mt-std-586c349ae6be1.woff") format('woff');
+}
+@font-face {
+font-family: 'Arial MT Std Medium';
+font-style: normal;
+font-weight: normal;
+src: url("../fonts/ArialMT/arial-mt-std-medium-586c3458cbe17.woff") format('woff');
+}
+@font-face {
+font-family: 'Arial MT Std Medium Italic';
+font-style: normal;
+font-weight: normal;
+src: url("../fonts/ArialMT/arial-mt-std-medium-italic-586c35bd992c0.woff") format('woff');
+}
+@font-face {
+font-family: 'Arial MT Std Extra Bold';
+font-style: normal;
+font-weight: normal;
+src: url("../fonts/ArialMT/arial-mt-std-extra-bold-586c3439e8b1b.woff") format('woff');
+}
