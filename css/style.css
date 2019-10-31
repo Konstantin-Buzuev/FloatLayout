@@ -148,26 +148,15 @@ header figure img{
 .dignity:nth-child(odd){
     padding-right: 23px;
 }
-.dignity:nth-child(even){
-}
 /*SCREENSHOTS*/
-#screenshots{
-    padding-bottom: 20px;
-}
-#screenshots h2{
-    padding-bottom: 35px;
-}
 .screenshot{
     width: 574px;
     float: left;
-    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 15px;
 }
-.screenshot:nth-child(odd){
-    padding-right: 66px;
-}
-.screenshot:nth-child(even){
-    padding-left: 50px;
-    padding-right: 15px;
+.screenshot:nth-child(-n+3){
+    margin-top: 0;
 }
 .screenshot img{
     float: left;
@@ -175,7 +164,7 @@ header figure img{
     width: 200px;
     height: 150px;
 }
-.screenshot figcaption{
+.screenshot h3{
     color: #445161;
     font-size: 24px;
     font-weight: 400;
