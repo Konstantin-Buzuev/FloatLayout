@@ -171,33 +171,48 @@ header figure img{
     line-height: 30px;
 }
 /*REVIEWS*/
-#reviews{
-    padding-bottom: 26px;
-}
 #reviews h2{
-    padding-bottom: 35px;
+    margin-bottom: 35px;
 }
 .review{
     width: 574px;
     float: left;
-    padding-bottom: 24px;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.review:nth-child(-n+3){
+    margin-top: 0;
 }
 .review:nth-child(even){
-    padding-left: 50px;
-    padding-right: 32px;
+    margin-left: 0;
 }
 .review:nth-child(odd){
-    padding-right: 50px;
+    margin-right: 0;
 }
 .review .userpic{
     float: left;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
 }
 .review .comment{
-    padding-left: 16px;
-    overflow: hidden;
-    background-image: url(../img/bg_comment.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    float: left;
+    width: 468px;
+    background: #ebebeb;
+    margin-left: 16px; 
+    border-radius: 4px;
+}
+.review .comment::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    top: 27px;
+    background: #ebebeb;
+    transform: rotate(45deg);
 }
 .review .comment .text{
     font-style: italic;
@@ -216,7 +231,7 @@ header figure img{
     font-weight: 400;
     line-height: 14px;
     padding-top: 0px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
     padding-left: 13px;
 }
 /*BUY*/
