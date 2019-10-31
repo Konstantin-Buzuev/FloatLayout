@@ -244,12 +244,13 @@ header figure img{
     align-items: flex-end;
     justify-content: space-between;
 }
-.buypack{
+section .buypack{
     width: 300px;
     background-color: #445162;
     float: left;
     text-align: center;
     border-radius: 3px;
+    padding: 0;
 }
 .buypack h3{
     color: #ffffff;
