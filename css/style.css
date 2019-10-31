@@ -105,27 +105,50 @@ header figure img{
     float: right;
 }
 /*DIGNITY*/
+.dignities{
+    list-style: none;
+    padding-left: 0;
+    color: #445161;
+    font-size: 16px;
+    line-height: 24px;
+}
 .dignity{
     float: left;
     width: 567px;
-    padding-bottom: 35px;
+    /*background: url(../img/buttonPlus.jpg) no-repeat left 5px;*/
+    /*padding-left: 40px;*/
+    text-align: justify;
+    margin-top: 35px;
+}
+.dignity summary{
+    display: block;
+    margin-bottom: 15px;
+}
+.dignity summary::-webkit-details-marker {
+  display: none;
+}
+.dignity summary::before {
+    content: '';
+    background: url(../img/buttonPlus.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-right: 5px;
+    height: 32px;
+    width: 32px;
+    float: left;
+}
+.dignity details[open] > summary::before {
+    background: url(../img/buttonMinus.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.dignity:nth-child(-n+2){
+    margin-top: 0;
 }
 .dignity:nth-child(odd){
-    padding-right: 73px;
-}
-.dignity:nth-child(even){
-    padding-left: 50px;
     padding-right: 23px;
 }
- .dignity img{
-    float: left;
-    padding-right: 9px;
-}
-.dignity img:hover{
-    cursor: pointer;
-}
-.dignity p{
-    overflow: hidden;
+.dignity:nth-child(even){
 }
 /*SCREENSHOTS*/
 #screenshots{
