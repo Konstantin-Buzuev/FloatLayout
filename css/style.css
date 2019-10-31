@@ -103,6 +103,7 @@ header figure img{
 }
 #about .video{
     float: right;
+    border: 0;
 }
 /*DIGNITY*/
 .dignities{
