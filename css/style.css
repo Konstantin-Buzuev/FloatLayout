@@ -5,13 +5,11 @@
     padding: 0;
 }
 h1{
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
     color: #ffffff;
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 0.2px;
-    height: 47px;
-    vertical-align: top;
 }
 h2{
     color: #445161;
@@ -36,9 +34,12 @@ section, article, aside, footer, header, nav {
     margin: 0 auto;
 }
 section{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    overflow: auto;
+    padding: 50px;
+}
+section::after{
+    content: '';
+    clear: both;
+    display: block;
 }
 section:nth-child(odd){
     background-color: #ffffff;
@@ -47,8 +48,8 @@ section:nth-child(even){
     background-color: #f5f5f5;
 }
 section h2{
-    padding-bottom: 30px;
-    /*padding bottom redifined in some sections*/
+    margin-bottom: 30px;
+    /*margin redefined in some sections*/
     text-align: center;
     /*text-align redifined in "About" section*/
 }
@@ -56,16 +57,21 @@ section h2{
 header{
     background-color: #445162;
     color: #ffffff;
-    padding-top: 50px;
+    padding: 50px;
 }
-header .content{
-    padding-left: 50px;
-    float: left;
+header::after{
+    content: '';
+    clear: both;
+    display: block;
 }
 header h1{
+    line-height: 50px;
     padding-bottom: 50px;
 }
-.content ul li{
+header .content{
+    float: left;
+}
+header .content ul li{
     list-style: none; 
     background: url(../img/check_icon.png) no-repeat; 
     padding-left: 36px;
@@ -77,9 +83,7 @@ header h1{
     letter-spacing: 0.015px;
 }
 header figure{
-    padding-right: 50px;
-    padding-bottom: 60px;
-    text-align: end;
+    float: right;
     height: 214px;
 }
 header figure img{
@@ -87,32 +91,20 @@ header figure img{
     width: 469px;
 }
 /*ABOUT*/
-#about .invisible{
-    display: none;
-}
-#about .content{
-    padding-left: 50px;
-    float: left;
-}
 #about h2{
     text-align: left;
 }
 #about p{
+    margin-bottom: 20px;
+}
+#about h2, #about p{
+    float: left;
     width: 653px;
 }
 #about .video{
-    padding-right: 50px;
-    text-align: end;
-    height: 245px;
-}
-#about .video img{
-    height: 245px;
-    width: 430px;
+    float: right;
 }
 /*DIGNITY*/
-#dignities{
-    padding-bottom: 15px;
-}
 .dignity{
     float: left;
     width: 567px;
