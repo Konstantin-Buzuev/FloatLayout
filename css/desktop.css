@@ -1,0 +1,449 @@
+@media only screen and (min-width: 1025px)
+{
+/*COMMON*/
+*{
+    font-family: 'Arial MT Std Light', sans-serif, monospace;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+h2{
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+}
+p{
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: -0.37px;
+}
+/* Old browser support*/
+section, article, aside, footer, header, nav {
+  display:block;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+}
+section{
+    padding: 50px;
+}
+section::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+section:nth-child(odd){
+    background-color: #ffffff;
+}
+section:nth-child(even){
+    background-color: #f5f5f5;
+}
+section h2{
+    margin-bottom: 30px;
+    /*margin redefined in some sections*/
+    text-align: center;
+    /*text-align redifined in "About" section*/
+}
+/*HEADER*/
+header{
+    padding: 50px;
+    background-color: #445162;
+    color: #ffffff;
+}
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+header h1{
+    line-height: 50px;
+    padding-bottom: 50px;
+}
+header .content{
+    float: left;
+}
+header .content ul li{
+    list-style: none; 
+    background: url(../img/check_icon.png) no-repeat; 
+    padding-left: 36px;
+    padding-bottom: 6.25px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.015px;
+}
+header figure{
+    float: right;
+    height: 214px;
+}
+header figure img{
+    height: 214px;
+    width: 469px;
+}
+/*ABOUT*/
+#about h2{
+    text-align: left;
+}
+#about p{
+    margin-bottom: 20px;
+}
+#about h2, #about p{
+    float: left;
+    width: 653px;
+}
+#about .video{
+    float: right;
+    border: 0;
+}
+/*DIGNITY*/
+.dignities{
+    list-style: none;
+    padding-left: 0;
+    color: #445161;
+    font-size: 16px;
+    line-height: 24px;
+}
+.dignity{
+    float: left;
+    width: 567px;
+    text-align: justify;
+    margin-top: 35px;
+}
+.dignity summary{
+    display: block;
+    margin-bottom: 15px;
+}
+.dignity summary::-webkit-details-marker {
+  display: none;
+}
+.dignity summary::before {
+    content: '';
+    background: url(../img/buttonPlus.jpg);
+    background-repeat: no-repeat;
+    background-position: left 5px;
+    margin-right: 5px;
+    height: 37px;
+    width: 32px;
+    float: left;
+    cursor: pointer;
+}
+.dignity details[open] > summary::before {
+    background: url(../img/buttonMinus.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.dignity:nth-child(-n+2){
+    margin-top: 0;
+}
+.dignity:nth-child(odd){
+    margin-right: 23px;
+}
+/*SCREENSHOTS*/
+.screenshot{
+    width: 574px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+.screenshot:nth-child(-n+3){
+    margin-top: 0;
+}
+.screenshot img{
+    float: left;
+    padding-right: 15px;
+    width: 200px;
+    height: 150px;
+}
+.screenshot h3{
+    color: #445161;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+/*REVIEWS*/
+#reviews h2{
+    margin-bottom: 35px;
+}
+.review{
+    width: 574px;
+    float: left;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.review:nth-child(-n+3){
+    margin-top: 0;
+}
+.review:nth-child(even){
+    margin-left: 0;
+}
+.review:nth-child(odd){
+    margin-right: 0;
+}
+.review .userpic{
+    float: left;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.review .comment{
+    position: relative;
+    float: left;
+    width: 468px;
+    background: #ebebeb;
+    margin-left: 16px; 
+    border-radius: 4px;
+}
+.review .comment::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    top: 27px;
+    background: #ebebeb;
+    transform: rotate(45deg);
+}
+.review .comment .text{
+    font-style: italic;
+    color: #333333;
+    height: 64px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    padding: 16px 20px 15px 13px;
+}
+.review .author{
+    font-style: normal;
+    color: #989898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    padding-top: 0px;
+    margin-bottom: 15px;
+    padding-left: 13px;
+}
+/*BUY*/
+#buy{
+    padding-left: 145px;
+    padding-right: 145px;
+}
+.buy-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+section .buypack{
+    width: 300px;
+    background-color: #445162;
+    float: left;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0;
+}
+.buypack h3{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.buypack .price{
+    background-color: #ffffff;
+    color: #445162;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: 2px solid #445162;
+}
+.buypack ol{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+    list-style-type: decimal;
+    padding-left: 32px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+.buy-button-container{
+    text-align: center;
+    padding-bottom: 20px;
+}
+#buy .button{
+    display: inline-block;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-top: 14px;
+    width: 260px;
+    height: 26px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+}
+.button:hover{
+    box-shadow: none;
+}
+.button span{
+    color: #445161;
+}
+/*FOOTER*/
+footer{
+    background-color: #445162;
+    padding-left: 250px;
+    padding-right: 245px;
+    padding-top: 52px;
+    padding-bottom: 50px;
+    overflow: auto;
+}
+footer h2{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;    
+    text-align: center;
+    padding-bottom: 31px;
+}
+footer form{
+    float: left;
+    border: none;
+}
+footer fieldset{
+    border: none;
+    padding-right: 45px;
+}
+footer form input{
+    display: block;
+    width: 490px;
+    height: 40px;
+    border-radius: 3px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    margin-bottom: 21px;
+    padding-left: 10px;
+}
+.userName{
+    text-transform: capitalize;
+}
+.userName:valid{
+    outline: 3px solid mediumseagreen;
+}
+footer input[type="email"]:valid {
+    outline: 3px solid mediumseagreen;
+}
+footer textarea{
+    display: block;
+    resize: none;
+    width: 490px;
+    height: 170px;
+    border-radius: 3px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    margin-bottom: 21px;
+    padding-left: 10px;
+    padding-top: 13px;
+}
+footer input[type=submit]{
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+footer input[type=submit]:hover{
+    cursor: pointer;
+}
+footer .contact{
+    float: left;
+    font-style: normal;
+    width: 240px;
+}
+footer .contact ul{
+    padding: 0;
+}
+footer .contact ul li{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    list-style: none;
+    line-height: 24px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+footer #skype{
+    background: url(../img/skype_icon.png) no-repeat left center;
+}
+footer #icq{
+    background: url(../img/icq_icon.png) no-repeat left center;
+}
+footer #email{
+    background: url(../img/email_icon.png) no-repeat left center;
+}
+footer #phone{
+    background: url(../img/phone_icon.png) no-repeat left center;
+}
+footer .social-networks{
+    margin-top: 35px;
+    height: 36px;
+}
+footer .social-networks a{
+    font-family: Socialico;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    vertical-align: middle;
+    
+}
+.copyright{
+    text-align: center;
+    clear: both;
+    color: #445162;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+}

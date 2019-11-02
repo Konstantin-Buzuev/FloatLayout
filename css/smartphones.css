@@ -1,0 +1,433 @@
+@media only screen and (min-width: 0px) and (max-width: 767px)
+{
+/*COMMON*/
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+h2{
+    color: #445161;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+}
+p{
+    color: #333333;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: -0.37px;
+}
+/* Old browser support*/
+section, article, aside, footer, header, nav {
+  display:block;
+}
+.container{
+    margin: 0;
+    width: 100%;
+}
+section{
+    padding-top: 10px;
+}
+section::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+section:nth-child(odd){
+    background-color: #ffffff;
+}
+section:nth-child(even){
+    background-color: #f5f5f5;
+}
+section h2{
+    margin-bottom: 10px;
+    /*margin redefined in some sections*/
+    text-align: center;
+    /*text-align redifined in "About" section*/
+}
+/*HEADER*/
+header{
+    background-color: #445162;
+    color: #ffffff;
+    padding: 10px 0px;
+}
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+header h1{
+    line-height: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+header .content{
+    margin-bottom: 10px;
+}
+header .content ul li{
+    list-style: none; 
+    background: url(../img/check_icon.png) no-repeat;
+    background-position: left 5px;
+    padding-top: 10px;
+    padding-left: 30px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 calc(50% - 150px);
+}
+header figure{
+    text-align: center;
+    padding: 0 10px;
+}
+header figure img{
+    width: 100%;
+    object-fit: cover;
+}
+/*ABOUT*/
+#about h2{
+    text-align: center;
+}
+#about .video{
+    border: 0;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+#about p{
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+/*DIGNITY*/
+.dignities{
+    list-style: none;
+    padding-left: 0;
+    color: #445161;
+    font-size: 12px;
+    line-height: 24px;
+}
+.dignity{
+    text-align: justify;
+    margin-top: 20px;
+    padding: 0px 10px;
+}
+.dignity summary{
+    display: block;
+    margin-bottom: 15px;
+}
+.dignity summary::-webkit-details-marker {
+  display: none;
+}
+.dignity summary::before {
+    content: '';
+    background: url(../img/buttonPlus.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 42px;
+    width: 100%;
+    float: left;
+}
+.dignity details[open] > summary::before {
+    background: url(../img/buttonMinus.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.dignity:first-child(){
+    margin-top: 0;
+}
+/*SCREENSHOTS*/
+.screenshot{
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.screenshot:first-child(){
+    margin-top: 0;
+}
+.screenshot img{
+    width: 100%;
+    object-fit: cover;
+}
+.screenshot h3{
+    color: #445161;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    
+}
+/*REVIEWS*/
+#reviews h2{
+    margin-bottom: 15px;
+}
+.review{
+    margin-top: 10px;
+    text-align: center;
+}
+.review::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.review .userpic{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.review .comment{
+    position: relative;
+    width: calc(100% - 20px);
+    background: #ebebeb;
+    border-radius: 4px;
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+.review .comment::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 10px);
+    top: -10px;
+    background: #ebebeb;
+    transform: rotate(45deg);
+}
+.review .comment .text{
+    font-style: italic;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    padding: 10px;
+}
+.review .author{
+    font-style: normal;
+    color: #989898;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+/*BUY*/
+.buy-container{
+    display: flex;
+    flex-direction: column;
+}
+section .buypack{
+    width: 100%;
+    background-color: #445162;
+    text-align: center;
+    border-radius: 3px;
+    margin: 10px 0px;
+    padding: 0;
+}
+.buypack h3{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.buypack .price{
+    background-color: #ffffff;
+    color: #445162;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: 2px solid #445162;
+}
+.buypack ol{
+    display: block;
+    margin: 0 calc(50% - 135px);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+    list-style-type: decimal;
+    padding-left: 32px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    
+}
+.buy-button-container{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#buy .button{
+    display: inline-block;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    width: 260px;
+    height: 26px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+}
+.button:hover{
+    box-shadow: none;
+}
+.button span{
+    color: #445161;
+}
+/*FOOTER*/
+footer{
+    background-color: #445162;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer::after{
+    content: '';
+    clear: both;
+    display: block;
+    }    
+footer h2{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;    
+    text-align: center;
+    padding-bottom: 31px;
+}
+footer form{
+    border: none;
+}
+footer fieldset{
+    border: none;
+    padding: 10px;
+}
+footer form input{
+    display: block;
+    width: calc(100% - 10px);
+    height: 40px;
+    border-radius: 3px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.userName{
+    text-transform: capitalize;
+}
+.userName:valid{
+    outline: 3px solid mediumseagreen;
+}
+footer input[type="email"]:valid {
+    outline: 3px solid mediumseagreen;
+}
+footer textarea{
+    display: block;
+    resize: none;
+    width: calc(100% - 10px);
+    height: 170px;
+    border-radius: 3px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+footer input[type=submit]{
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+footer input[type=submit]:hover{
+    cursor: pointer;
+}
+footer .contact{
+    font-style: normal;
+    width: 200px;
+    margin-left: calc(50% - 95px);
+    margin-right: calc(50% - 105px);
+    
+}
+footer .contact ul{
+    padding: 0;
+    
+}
+footer .contact ul li{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    list-style: none;
+    line-height: 24px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+footer #skype{
+    background: url(../img/skype_icon.png) no-repeat left center;
+}
+footer #icq{
+    background: url(../img/icq_icon.png) no-repeat left center;
+}
+footer #email{
+    background: url(../img/email_icon.png) no-repeat left center;
+}
+footer #phone{
+    background: url(../img/phone_icon.png) no-repeat left center;
+}
+footer .social-networks{
+    margin-top: 10px;
+    height: 36px;
+}
+footer .social-networks a{
+    font-family: Socialico;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: middle;
+    
+}
+.copyright{
+    text-align: center;
+    clear: both;
+    color: #445162;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+}
