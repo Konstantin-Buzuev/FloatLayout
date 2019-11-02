@@ -2,20 +2,19 @@
 {
 /*COMMON*/
 *{
-    font-family: 'Arial MT Std Light', sans-serif, monospace;
     margin: 0;
     padding: 0;
 }
 h1{
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-    color: green;
-    font-size: 60px;
+    color: #ffffff;
+    font-size: 40px;
     font-weight: 400;
     letter-spacing: 0.2px;
 }
 h2{
     color: #445161;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 36px;
 }
@@ -32,11 +31,10 @@ section, article, aside, footer, header, nav {
   display:block;
 }
 .container{
-    margin: 0 auto;
-    width: 1280px;
+    width: 100%;
 }
 section{
-    padding: 50px;
+    padding: 25px;
 }
 section::after{
     content: '';
@@ -57,7 +55,7 @@ section h2{
 }
 /*HEADER*/
 header{
-    padding: 50px;
+    padding: 25px;
     background-color: #445162;
     color: #ffffff;
 }
@@ -67,47 +65,50 @@ header::after{
     display: block;
 }
 header h1{
+    text-align: center;
     line-height: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 header .content{
-    float: left;
+margin-bottom: 25px;
 }
 header .content ul li{
     list-style: none; 
     background: url(../img/check_icon.png) no-repeat; 
     padding-left: 36px;
-    padding-bottom: 6.25px;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0.015px;
+    margin: 0 calc(50% - 220px);
 }
 header figure{
-    float: right;
-    height: 214px;
+    text-align: center;
+    margin: 0 auto;
+    
 }
 header figure img{
-    height: 214px;
     width: 469px;
+    object-fit: cover;
+    object-position: center center;
 }
 /*ABOUT*/
+#about{
+    padding: 25px;
+    }    
 #about h2{
-    text-align: left;
+    text-align: center;
+}
+#about .video{
+    text-align: center;
+    border: 0;
+    width: 100%;
 }
 #about p{
     margin-bottom: 20px;
 }
-#about h2, #about p{
-    float: left;
-    width: 653px;
-}
-#about .video{
-    float: right;
-    border: 0;
-}
-/*DIGNITY*/
+ /*DIGNITY*/
 .dignities{
     list-style: none;
     padding-left: 0;
@@ -117,9 +118,9 @@ header figure img{
 }
 .dignity{
     float: left;
-    width: 567px;
+    width: calc(50% - 10px);
     text-align: justify;
-    margin-top: 35px;
+    margin-top: 20px;
 }
 .dignity summary{
     display: block;
@@ -148,40 +149,36 @@ header figure img{
     margin-top: 0;
 }
 .dignity:nth-child(odd){
-    margin-right: 23px;
+    margin-right: 20px;
 }
 /*SCREENSHOTS*/
 .screenshot{
-    width: 574px;
-    float: left;
     margin-top: 30px;
-    margin-right: 15px;
 }
-.screenshot:nth-child(-n+3){
+.screenshot:first-child(){
     margin-top: 0;
 }
 .screenshot img{
-    float: left;
-    padding-right: 15px;
-    width: 200px;
-    height: 150px;
+    padding-right: 0px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center center;
 }
 .screenshot h3{
     color: #445161;
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
+    text-align: center;
 }
 /*REVIEWS*/
 #reviews h2{
     margin-bottom: 35px;
 }
 .review{
-    width: 574px;
+    width: calc(50% - 20px);
     float: left;
-    margin-top: 24px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 24px 16px 0px 16px;
 }
 .review:nth-child(-n+3){
     margin-top: 0;
@@ -201,7 +198,7 @@ header figure img{
 .review .comment{
     position: relative;
     float: left;
-    width: 468px;
+    width: calc(100% - 95px);
     background: #ebebeb;
     margin-left: 16px; 
     border-radius: 4px;
@@ -219,12 +216,11 @@ header figure img{
 .review .comment .text{
     font-style: italic;
     color: #333333;
-    height: 64px;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0px;
-    padding: 16px 20px 15px 13px;
+    padding: 10px;
 }
 .review .author{
     font-style: normal;
@@ -237,17 +233,13 @@ header figure img{
     padding-left: 13px;
 }
 /*BUY*/
-#buy{
-    padding-left: 145px;
-    padding-right: 145px;
-}
 .buy-container{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
 section .buypack{
-    width: 300px;
+    width: calc(33% - 12px);
     background-color: #445162;
     float: left;
     text-align: center;
@@ -278,10 +270,11 @@ section .buypack{
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
     text-align: justify;
     list-style-type: decimal;
-    padding-left: 32px;
+    padding-left: 24px;
+    padding-right: 3px;
     padding-top: 19px;
     padding-bottom: 19px;
 }
@@ -297,8 +290,8 @@ section .buypack{
     font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
-    padding-top: 14px;
-    width: 260px;
+    padding-top: 10px;
+    width: calc(100% - 4px);
     height: 26px;
     border-radius: 3px;
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
@@ -312,31 +305,33 @@ section .buypack{
 /*FOOTER*/
 footer{
     background-color: #445162;
-    padding-left: 250px;
-    padding-right: 245px;
-    padding-top: 52px;
-    padding-bottom: 50px;
-    overflow: auto;
+    padding: 25px;
+}
+footer::after{
+    content: '';
+    clear: both;
+    display: block;
 }
 footer h2{
     color: #ffffff;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 36px;    
     text-align: center;
-    padding-bottom: 31px;
+    padding-bottom: 25px;
 }
 footer form{
     float: left;
     border: none;
+    width: 66%;
 }
 footer fieldset{
     border: none;
-    padding-right: 45px;
+    padding-right: 25px;
 }
 footer form input{
     display: block;
-    width: 490px;
+    width: 100%;
     height: 40px;
     border-radius: 3px;
     color: #445162;
@@ -359,7 +354,7 @@ footer input[type="email"]:valid {
 footer textarea{
     display: block;
     resize: none;
-    width: 490px;
+    width: 100%;
     height: 170px;
     border-radius: 3px;
     color: #445162;
@@ -387,9 +382,9 @@ footer input[type=submit]:hover{
     cursor: pointer;
 }
 footer .contact{
-    float: left;
+    float: right;
     font-style: normal;
-    width: 240px;
+    width: 33%;
 }
 footer .contact ul{
     padding: 0;
@@ -435,7 +430,6 @@ footer .social-networks a{
 }
 .copyright{
     text-align: center;
-    clear: both;
     color: #445162;
     font-size: 12px;
     font-weight: 400;
