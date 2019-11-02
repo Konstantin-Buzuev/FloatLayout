@@ -89,17 +89,21 @@ header figure{
     padding: 0 10px;
 }
 header figure img{
+    max-width: 469px;
     width: 100%;
-    object-fit: cover;
+    
 }
 /*ABOUT*/
 #about h2{
     text-align: center;
 }
 #about .video{
+    display: flex;
     border: 0;
-    width: calc(100% - 20px);
+    margin: 0 auto;
     margin-bottom: 10px;
+    width: calc(100% - 20px);
+    max-width: 430px;
     padding: 0 10px;
 }
 #about p{
