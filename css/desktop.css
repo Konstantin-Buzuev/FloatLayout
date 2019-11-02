@@ -67,12 +67,13 @@ header::after{
     clear: both;
     display: block;
 }
+header .content{
+    float: left;
+    width: calc(50% - 50px);
+}
 header h1{
     line-height: 50px;
     padding-bottom: 50px;
-}
-header .content{
-    float: left;
 }
 header .content ul li{
     list-style: none; 
@@ -87,27 +88,30 @@ header .content ul li{
 }
 header figure{
     float: right;
-    height: 214px;
+    width: calc(50% - 50px);
 }
 header figure img{
-    height: 214px;
-    width: 469px;
+    width: 100%;
+    object-position: center center;
 }
 /*ABOUT*/
 #about h2{
     text-align: left;
-}
-#about p{
-    margin-bottom: 20px;
-}
-#about h2, #about p{
     float: left;
-    width: 653px;
+    width: calc(50% - 5px);
 }
 #about .video{
     float: right;
     border: 0;
+    width: calc(50% - 5px);
 }
+#about p{
+    margin-bottom: 20px;
+    width: calc(50% - 5px);
+}
+#about p + p{
+    margin-bottom: 0px;        
+}    
 /*DIGNITY*/
 .dignities{
     list-style: none;
@@ -118,7 +122,7 @@ header figure img{
 }
 .dignity{
     float: left;
-    width: 567px;
+    width: calc(50% - 20px);
     text-align: justify;
     margin-top: 35px;
 }
@@ -145,6 +149,12 @@ header figure img{
     background-repeat: no-repeat;
     background-position: left;
 }
+.dignity:focus{
+    outline: none;        
+}
+.dignity details:focus{
+    outline: none;        
+}    
 .dignity:nth-child(-n+2){
     margin-top: 0;
 }
@@ -153,7 +163,7 @@ header figure img{
 }
 /*SCREENSHOTS*/
 .screenshot{
-    width: 574px;
+    width: calc(50% - 20px);
     float: left;
     margin-top: 30px;
     margin-right: 15px;
@@ -164,7 +174,8 @@ header figure img{
 .screenshot img{
     float: left;
     padding-right: 15px;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 150px;
 }
 .screenshot h3{
@@ -178,7 +189,8 @@ header figure img{
     margin-bottom: 35px;
 }
 .review{
-    width: 574px;
+    max-width: 574px;
+    width: calc(50% - 20px);
     float: left;
     margin-top: 24px;
     margin-left: 16px;
@@ -202,7 +214,8 @@ header figure img{
 .review .comment{
     position: relative;
     float: left;
-    width: 468px;
+    max-width: 468px;
+    width: calc(100% - 95px);
     background: #ebebeb;
     margin-left: 16px; 
     border-radius: 4px;
@@ -248,7 +261,8 @@ header figure img{
     justify-content: space-between;
 }
 section .buypack{
-    width: 300px;
+    max-width: 300px;
+    width: calc(33% - 15px);
     background-color: #445162;
     float: left;
     text-align: center;
@@ -282,9 +296,7 @@ section .buypack{
     line-height: 24px;
     text-align: justify;
     list-style-type: decimal;
-    padding-left: 32px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding: 19px 4px 19px 28px;
 }
 .buy-button-container{
     text-align: center;
@@ -299,7 +311,8 @@ section .buypack{
     line-height: 18px;
     text-transform: uppercase;
     padding-top: 14px;
-    width: 260px;
+    max-width: 260px;
+    width: calc(100% - 4px);
     height: 26px;
     border-radius: 3px;
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
@@ -313,12 +326,16 @@ section .buypack{
 /*FOOTER*/
 footer{
     background-color: #445162;
-    padding-left: 250px;
-    padding-right: 245px;
+    padding-left: 19.53125%;
+    padding-right: 19.140625%;
     padding-top: 52px;
     padding-bottom: 50px;
-    overflow: auto;
 }
+footer::after{
+    content: '';
+    clear: both;
+    display: block;
+    }
 footer h2{
     color: #ffffff;
     font-size: 30px;
@@ -330,14 +347,16 @@ footer h2{
 footer form{
     float: left;
     border: none;
+    width: 60%;
 }
 footer fieldset{
     border: none;
-    padding-right: 45px;
+    padding-right: 25px;
 }
 footer form input{
     display: block;
-    width: 490px;
+    max-width: 490px;
+    width: 100%;
     height: 40px;
     border-radius: 3px;
     color: #445162;
@@ -360,7 +379,8 @@ footer input[type="email"]:valid {
 footer textarea{
     display: block;
     resize: none;
-    width: 490px;
+    max-width: 490px;
+    width: 100%;
     height: 170px;
     border-radius: 3px;
     color: #445162;
@@ -388,7 +408,7 @@ footer input[type=submit]:hover{
     cursor: pointer;
 }
 footer .contact{
-    float: left;
+    float: right;
     font-style: normal;
     width: 240px;
 }
@@ -436,7 +456,6 @@ footer .social-networks a{
 }
 .copyright{
     text-align: center;
-    clear: both;
     color: #445162;
     font-size: 12px;
     font-weight: 400;
