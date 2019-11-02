@@ -30,8 +30,8 @@ section, article, aside, footer, header, nav {
   display:block;
 }
 .container{
-    width: 1280px;
     margin: 0 auto;
+    width: 1280px;
 }
 section{
     padding: 50px;
@@ -55,9 +55,9 @@ section h2{
 }
 /*HEADER*/
 header{
+    padding: 50px;
     background-color: #445162;
     color: #ffffff;
-    padding: 50px;
 }
 header::after{
     content: '';
@@ -116,8 +116,6 @@ header figure img{
 .dignity{
     float: left;
     width: 567px;
-    /*background: url(../img/buttonPlus.jpg) no-repeat left 5px;*/
-    /*padding-left: 40px;*/
     text-align: justify;
     margin-top: 35px;
 }
@@ -132,11 +130,12 @@ header figure img{
     content: '';
     background: url(../img/buttonPlus.jpg);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: left 5px;
     margin-right: 5px;
-    height: 32px;
+    height: 37px;
     width: 32px;
     float: left;
+    cursor: pointer;
 }
 .dignity details[open] > summary::before {
     background: url(../img/buttonMinus.jpg);
@@ -147,7 +146,7 @@ header figure img{
     margin-top: 0;
 }
 .dignity:nth-child(odd){
-    padding-right: 23px;
+    margin-right: 23px;
 }
 /*SCREENSHOTS*/
 .screenshot{
