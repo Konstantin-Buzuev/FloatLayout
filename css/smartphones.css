@@ -228,6 +228,7 @@ header figure img{
 .buy-container{
     display: flex;
     flex-direction: column;
+    padding: 0px 10px;
 }
 section .buypack{
     width: 100%;
