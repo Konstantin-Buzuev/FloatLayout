@@ -1,25 +1,26 @@
+@media only screen and (min-width: 0px) and (max-width: 767px)
+{
 /*COMMON*/
 *{
-    font-family: 'Arial MT Std Light', sans-serif, monospace;
     margin: 0;
     padding: 0;
 }
 h1{
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
     color: #ffffff;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 400;
     letter-spacing: 0.2px;
 }
 h2{
     color: #445161;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 36px;
 }
 p{
     color: #333333;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 24px;
     text-align: justify;
@@ -30,11 +31,11 @@ section, article, aside, footer, header, nav {
   display:block;
 }
 .container{
-    margin: 0 auto;
-    width: 1280px;
+    margin: 0;
+    width: 100%;
 }
 section{
-    padding: 50px;
+    padding-top: 10px;
 }
 section::after{
     content: '';
@@ -48,16 +49,16 @@ section:nth-child(even){
     background-color: #f5f5f5;
 }
 section h2{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     /*margin redefined in some sections*/
     text-align: center;
     /*text-align redifined in "About" section*/
 }
 /*HEADER*/
 header{
-    padding: 50px;
     background-color: #445162;
     color: #ffffff;
+    padding: 10px 0px;
 }
 header::after{
     content: '';
@@ -65,59 +66,62 @@ header::after{
     display: block;
 }
 header h1{
-    line-height: 50px;
-    padding-bottom: 50px;
+    line-height: 25px;
+    padding-bottom: 25px;
+    text-align: center;
 }
 header .content{
-    float: left;
+    margin-bottom: 10px;
 }
 header .content ul li{
     list-style: none; 
-    background: url(../img/check_icon.png) no-repeat; 
-    padding-left: 36px;
-    padding-bottom: 6.25px;
+    background: url(../img/check_icon.png) no-repeat;
+    background-position: left 5px;
+    padding-top: 10px;
+    padding-left: 30px;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0.015px;
+    margin: 0 calc(50% - 150px);
 }
 header figure{
-    float: right;
-    height: 214px;
+    text-align: center;
+    padding: 0 10px;
 }
 header figure img{
-    height: 214px;
-    width: 469px;
+    max-width: 469px;
+    width: 100%;
+    
 }
 /*ABOUT*/
 #about h2{
-    text-align: left;
-}
-#about p{
-    margin-bottom: 20px;
-}
-#about h2, #about p{
-    float: left;
-    width: 653px;
+    text-align: center;
 }
 #about .video{
-    float: right;
+    display: flex;
     border: 0;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    max-width: 430px;
+    padding: 0 10px;
+}
+#about p{
+    margin-bottom: 10px;
+    padding: 0px 10px;
 }
 /*DIGNITY*/
 .dignities{
     list-style: none;
     padding-left: 0;
     color: #445161;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 24px;
 }
 .dignity{
-    float: left;
-    width: 567px;
     text-align: justify;
-    margin-top: 35px;
+    margin-top: 20px;
+    padding: 0px 10px;
 }
 .dignity summary{
     display: block;
@@ -130,126 +134,108 @@ header figure img{
     content: '';
     background: url(../img/buttonPlus.jpg);
     background-repeat: no-repeat;
-    background-position: left 5px;
-    margin-right: 5px;
-    height: 37px;
-    width: 32px;
+    background-position: center center;
+    height: 42px;
+    width: 100%;
     float: left;
-    cursor: pointer;
 }
 .dignity details[open] > summary::before {
     background: url(../img/buttonMinus.jpg);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center center;
 }
-.dignity:nth-child(-n+2){
+.dignity:first-child(){
     margin-top: 0;
-}
-.dignity:nth-child(odd){
-    margin-right: 23px;
 }
 /*SCREENSHOTS*/
 .screenshot{
-    width: 574px;
-    float: left;
-    margin-top: 30px;
-    margin-right: 15px;
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.screenshot:nth-child(-n+3){
+.screenshot:first-child(){
     margin-top: 0;
 }
 .screenshot img{
-    float: left;
-    padding-right: 15px;
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    object-fit: cover;
 }
 .screenshot h3{
     color: #445161;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 30px;
+    text-align: center;
+    
 }
 /*REVIEWS*/
 #reviews h2{
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 .review{
-    width: 574px;
-    float: left;
-    margin-top: 24px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-top: 10px;
+    text-align: center;
 }
-.review:nth-child(-n+3){
-    margin-top: 0;
-}
-.review:nth-child(even){
-    margin-left: 0;
-}
-.review:nth-child(odd){
-    margin-right: 0;
+.review::after{
+    content: '';
+    clear: both;
+    display: block;
 }
 .review .userpic{
-    float: left;
     height: 75px;
     width: 75px;
     border-radius: 50%;
 }
 .review .comment{
     position: relative;
-    float: left;
-    width: 468px;
+    width: calc(100% - 20px);
     background: #ebebeb;
-    margin-left: 16px; 
     border-radius: 4px;
+    margin: 0px 10px;
+    margin-top: 10px;
 }
 .review .comment::before{
     content: '';
     position: absolute;
     width: 20px;
     height: 20px;
-    left: -10px;
-    top: 27px;
+    left: calc(50% - 10px);
+    top: -10px;
     background: #ebebeb;
     transform: rotate(45deg);
 }
 .review .comment .text{
     font-style: italic;
     color: #333333;
-    height: 64px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0px;
-    padding: 16px 20px 15px 13px;
+    padding: 10px;
 }
 .review .author{
     font-style: normal;
     color: #989898;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 14px;
-    padding-top: 0px;
-    margin-bottom: 15px;
-    padding-left: 13px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 /*BUY*/
-#buy{
-    padding-left: 145px;
-    padding-right: 145px;
-}
 .buy-container{
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 0px 10px;
 }
 section .buypack{
-    width: 300px;
+    width: 100%;
     background-color: #445162;
-    float: left;
     text-align: center;
     border-radius: 3px;
+    margin: 10px 0px;
     padding: 0;
 }
 .buypack h3{
@@ -273,6 +259,8 @@ section .buypack{
     border: 2px solid #445162;
 }
 .buypack ol{
+    display: block;
+    margin: 0 calc(50% - 135px);
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
@@ -282,10 +270,11 @@ section .buypack{
     padding-left: 32px;
     padding-top: 19px;
     padding-bottom: 19px;
+    
 }
 .buy-button-container{
     text-align: center;
-    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
 #buy .button{
     display: inline-block;
@@ -295,7 +284,7 @@ section .buypack{
     font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
-    padding-top: 14px;
+    padding-top: 10px;
     width: 260px;
     height: 26px;
     border-radius: 3px;
@@ -310,12 +299,14 @@ section .buypack{
 /*FOOTER*/
 footer{
     background-color: #445162;
-    padding-left: 250px;
-    padding-right: 245px;
-    padding-top: 52px;
-    padding-bottom: 50px;
-    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+footer::after{
+    content: '';
+    clear: both;
+    display: block;
+    }    
 footer h2{
     color: #ffffff;
     font-size: 30px;
@@ -325,16 +316,15 @@ footer h2{
     padding-bottom: 31px;
 }
 footer form{
-    float: left;
     border: none;
 }
 footer fieldset{
     border: none;
-    padding-right: 45px;
+    padding: 10px;
 }
 footer form input{
     display: block;
-    width: 490px;
+    width: calc(100% - 10px);
     height: 40px;
     border-radius: 3px;
     color: #445162;
@@ -342,7 +332,7 @@ footer form input{
     font-weight: 400;
     line-height: 24px;
     border: none;
-    margin-bottom: 21px;
+    margin-bottom: 10px;
     padding-left: 10px;
 }
 .userName{
@@ -357,7 +347,7 @@ footer input[type="email"]:valid {
 footer textarea{
     display: block;
     resize: none;
-    width: 490px;
+    width: calc(100% - 10px);
     height: 170px;
     border-radius: 3px;
     color: #445162;
@@ -365,9 +355,9 @@ footer textarea{
     font-weight: 400;
     line-height: 24px;
     border: none;
-    margin-bottom: 21px;
+    margin-bottom: 10px;
     padding-left: 10px;
-    padding-top: 13px;
+    padding-top: 10px;
 }
 footer input[type=submit]{
     width: 140px;
@@ -385,12 +375,15 @@ footer input[type=submit]:hover{
     cursor: pointer;
 }
 footer .contact{
-    float: left;
     font-style: normal;
-    width: 240px;
+    width: 200px;
+    margin-left: calc(50% - 95px);
+    margin-right: calc(50% - 105px);
+    
 }
 footer .contact ul{
     padding: 0;
+    
 }
 footer .contact ul li{
     color: #ffffff;
@@ -415,18 +408,17 @@ footer #phone{
     background: url(../img/phone_icon.png) no-repeat left center;
 }
 footer .social-networks{
-    margin-top: 35px;
+    margin-top: 10px;
     height: 36px;
 }
 footer .social-networks a{
     font-family: Socialico;
     font-style: normal;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 400;
     line-height: 36px;
     text-align: left;
-    letter-spacing: 1.5px;
     text-decoration: none;
     vertical-align: middle;
     
@@ -443,83 +435,4 @@ footer .social-networks a{
     padding-bottom: 5px;
     margin: 0 auto;
 }
-/*Socialico*/
-@font-face {
-     font-family: "Socialico";
-     src: url("../fonts/Socialico/Socialico.eot?") format("eot"), url("../fonts/Socialico/Socialico.woff") format("woff"), url("../fonts/Socialico/Socialico.ttf") format("truetype"), url("../fonts/Socialico/Socialico.svg#Socialico") format("svg");
-     font-weight: normal;
-     font-style: normal;
-}
-/*Arial MT*/
-@font-face {
-font-family: 'Arial MT Std Italic';
-font-style: normal;
-font-weight: normal;
-src:  url("../fonts/ArialMT/arial-mt-std-italic-586c358cbc0a5.woff") format('woff');
-}
-@font-face {
-font-family: 'Arial MT Std Light';
-font-style: normal;
-font-weight: normal;
-src: url("../fonts/ArialMT/arial-mt-std-light-586c341645fe0.woff") format('woff');
-}
-@font-face {
-font-family: 'Arial MT Std Light Cond';
-font-style: normal;
-font-weight: normal;
-src: url("../fonts/ArialMT/arial-mt-std-light-cond-586c34fca466a.woff") format('woff');
-}
-@font-face {
-font-family: 'Arial MT Std Light Italic';
-font-style: normal;
-font-weight: normal;
-src: url("../fonts/ArialMT/arial-mt-std-light-italic-586c34c0cf3af.woff") format('woff');
-}
-@font-face {
-font-family: 'Arial MT Std Cond';
-font-style: normal;
-font-weight: normal;
-src:  url("../fonts/ArialMT/arial-mt-std-cond-586c3568cef79.woff") format('woff');
-}
-@font-face {
-font-family: 'Arial MT Std Bold Cond';
-font-style: normal;
-font-weight: normal;
-src: url("../fonts/ArialMT/arial-mt-std-bold-cond-586c34dd7068c.woff") format('woff');
-}
-@font-face {
-font-family: 'Arial MT Std Extra Bold Cond';
-font-style: normal;
-font-weight: normal;
-src: url("../fonts/ArialMT/arial-mt-std-extra-bold-cond-586c351f4de8a.woff") format('woff');
-}
-@font-face {
-font-family: 'Arial MT Std Black';
-font-style: normal;
-font-weight: normal;
-src: url("../fonts/ArialMT/arial-mt-std-black-586c347abdbc8.woff") format('woff');
-}
-@font-face {
-font-family: 'Arial Narrow MT Std';
-font-style: normal;
-font-weight: normal;
-src: url("../fonts/ArialMT/arial-narrow-mt-std-586c349ae6be1.woff") format('woff');
-}
-@font-face {
-font-family: 'Arial MT Std Medium';
-font-style: normal;
-font-weight: normal;
-src: url("../fonts/ArialMT/arial-mt-std-medium-586c3458cbe17.woff") format('woff');
-}
-@font-face {
-font-family: 'Arial MT Std Medium Italic';
-font-style: normal;
-font-weight: normal;
-src: url("../fonts/ArialMT/arial-mt-std-medium-italic-586c35bd992c0.woff") format('woff');
-}
-@font-face {
-font-family: 'Arial MT Std Extra Bold';
-font-style: normal;
-font-weight: normal;
-src: url("../fonts/ArialMT/arial-mt-std-extra-bold-586c3439e8b1b.woff") format('woff');
 }
